@@ -6725,7 +6725,6 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 
 #download{
 	position: relative;
-	background-color: white;
 	z-index: 10000;
 }
 
@@ -6808,8 +6807,33 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	font-family: "New Amsterdam", sans-serif;
 }
 
-.feature-desc{
-	color:#666666;
+@media (min-width: 1245px) and (max-width: 1490px) {
+	.feature-title {
+	  font-size: 20px;
+	}
+}
+
+@media (max-width: 1244px) {
+	.feature-title {
+	  font-size: 15px;
+	}
+}
+
+.feature-desc {
+    color: #666666;
+    margin-top: 0; /* Default for all descriptions */
+}
+
+@media (min-width: 1245px) and (max-width: 1490px) {
+	.feature-desc {
+	font-size: 10px;
+	}
+}
+
+@media (max-width: 1244px) {
+	.feature-desc {
+	  font-size: 9px;
+	}
 }
 
 
